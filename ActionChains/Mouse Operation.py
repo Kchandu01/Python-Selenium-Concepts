@@ -14,16 +14,15 @@ act = ActionChains(driver)
 # act.click(driver.find_element_by_xpath("//a[text()='Login']")).perform()   # left click by locating element
 
 # context click or Right click
-#act.context_click().perform()  # right click wherever the control
-#act.context_click(driver.find_element_by_xpath("//a[text()='Login']")).perform()
+# act.context_click().perform()  # right click wherever the control
+# act.context_click(driver.find_element_by_xpath("//a[text()='Login']")).perform()
 
 # Double click opearation
-#act.double_click().perform()  # double click anywhere
-#act.double_click(driver.find_element_by_xpath("//a[text()='Login']")).perform()  # double click by locating element
+# act.double_click().perform()  # double click anywhere
+# act.double_click(driver.find_element_by_xpath("//a[text()='Login']")).perform()  # double click by locating element
 
 # Moving a Mouse to Menu and Menu will open
 act.move_to_element(driver.find_element_by_xpath("//span[text()='TUTORIAL ']")).perform()
-
 
 time.sleep(10)
 driver.close()

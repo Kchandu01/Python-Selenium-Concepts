@@ -3,7 +3,7 @@ Constructors in Python
 In any programming language, constructor is a method which, by default, is invoked whenever
 an instance(object) for a class is created. It’s not required to explicitly invoke or call it.
 
-Generally, the constructor is used for initial intializations that are required during the
+Generally, the constructor is used for initial initializations that are required during the
 object creation. In python, constructor is a method with the name ‘__init__’.
 
 The methods first parameter should be ‘self’ (referring to the current object).
@@ -22,6 +22,8 @@ Non Parameterized Constructor or Default Constructor:
     initialization purpose.
     The constructor doesn’t have any parameters except self. The self contains the current object address.
 """
+
+
 class college:
 
     def __init__(self):

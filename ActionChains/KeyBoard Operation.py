@@ -5,14 +5,18 @@ import time
 
 driver = webdriver.Chrome(r"D:\My Folder\DS\Python Automation\Drivers\chromedriver_win32\chromedriver.exe")
 driver.get("http://www.thetestingworld.com/testings/")
+driver.maximize_window()
 
-driver.find_element_by_name('fld_username').send_keys('Hello')
+# driver.find_element_by_name('fld_username').send_keys('Hello')
+element = driver.find_element_by_name('fld_username')
+element.send_keys("hello user")
+
 
 act = ActionChains(driver)
 # act.send_keys(Keys.TAB).perform()
 
 # CONTROL + a is used to select data from text box
-act.key_down(Keys.CONTROL).send_keys('a').perform()
+act.key_down(Keys.CONTROL).send_keys('a').key_up(Keys.CONTROL).perform()
 
 # for CONTROL + ALT + DELETE
 

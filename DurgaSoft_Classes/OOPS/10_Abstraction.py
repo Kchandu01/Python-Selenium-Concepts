@@ -189,7 +189,6 @@ class Demo:
     def n(self):
         print("Implemented method")
 
-
 t = Demo()
 t.m()
 t.n()

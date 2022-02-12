@@ -18,14 +18,17 @@ Implementation of Inheritance in Python:
 While declaring subclass, we need to pass super class name into subclass’s parenthesis
 """
 
+
 # 1. Single Inheritance:
 class Parent:
     def one(self):
         print("This is Parent class Method")
 
+
 class Child(Parent):
     def two(self):
         print("This is child class method")
+
 
 p = Parent()
 p.one()
@@ -33,23 +36,28 @@ c = Child()
 c.one()
 c.two()
 
+
 # 2. Multilevel Inheritance:
 class A:
     def sum(self):
         print("A class method")
 
+
 class B(A):
     def sub(self):
         print("B class Method")
+
 
 class C(B):
     def mul(self):
         print("C class method")
 
+
 c = C()
 c.sum()
 c.sub()
 c.mul()
+
 
 # 3. Multiple Inheritance:
 
@@ -57,21 +65,24 @@ class P1:
     def sum(self):
         print("Parent 1 method")
 
+
 class P2:
     def sum(self):
         print("Parent 2 Method(with same name)")
+
     def sub(self):
         print("Parent 2 method")
 
-class P3(P1,P2):
+
+class P3(P1, P2):
     def mul(self):
         print("child class method")
 
-z= P3()
+
+z = P3()
 z.sum()
 z.sub()
 z.mul()
-
 
 """
 What if both parent classes have a method with the same name?
@@ -86,25 +97,30 @@ class C(P2, P1): ===>P2”s class method will be considered
 
 
 """
+
+
 class P1:
     def sum(self):
         print("Parent 1 method")
 
+
 class P2:
     def sum(self):
         print("Parent 2 Method(with same name)")
+
     def sub(self):
         print("Parent 2 method")
 
-class P3(P2,P1):
+
+class P3(P2, P1):
     def mul(self):
         print("child class method")
 
-z= P3()
+
+z = P3()
 z.sum()
 z.sub()
 z.mul()
-
 
 
 ######### CONSTRUCTORS in INHERITANCE:
@@ -113,10 +129,14 @@ z.mul()
 class A:
     def __init__(self):
         print("super class A constructor")
+
+
 class B(A):
     def m1(self):
         print("Child Class B: m1 method from B")
-b=B()
+
+
+b = B()
 
 """
 If child class and super class both have constructors, then?
@@ -140,17 +160,22 @@ b = B()
 
 """
 Can we call super class constructor from child class constructor?
-Yes, we can call super class constructor from child class constructor by using super() function. 
+Yes, we can call super class constructor from child class constructor by using super() function.
+ 
 super() is a predefined function which is useful to call the superclass constructors, variables 
 and methods from the child class.
 """
+
+
 class A:
     def __init__(self):
         print("super class A constructor")
+
 
 class B(A):
     def __init__(self):
         print("child class B constructor")
         super().__init__()
+
 
 b = B()

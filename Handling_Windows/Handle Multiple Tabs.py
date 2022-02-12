@@ -18,6 +18,8 @@ for tabs in Alltabs:
     if driver.current_url == 'https://www.thetestingworld.com/testings/manage_customer.php':
         driver.find_element_by_xpath("//button[text() = 'Start Download']").click()
 
+driver.switch_to.default_content()
+
 
 
 driver.quit()

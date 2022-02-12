@@ -7,9 +7,9 @@ ItemsInCart = 0
 # Test case should fail
 
 if ItemsInCart != 2:
-    #raise Exception("Products cart count not matching")
+    # raise Exception("Products cart count not matching")
     pass
 
 # we can use assert also
 
-assert(ItemsInCart==2)
+assert(ItemsInCart == 2)

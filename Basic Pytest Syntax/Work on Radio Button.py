@@ -8,3 +8,5 @@ driver.maximize_window()
 # work on radio button, click on radio button
 driver.find_element_by_xpath("//input[@value='home']").click()
 driver.find_element_by_xpath("//input[@value= 'office']").click()
+
+driver.execute_script("window.scrollTo(0,1000);")

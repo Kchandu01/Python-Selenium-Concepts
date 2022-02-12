@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome("D:\My Folder\DS\Python Automation\Drivers\chromedriver_win32\chromedriver.exe")
 driver.maximize_window()
 driver.get("http://www.dummysoftware.com/popupdummy_testpage.html")
 # driver.get("http://www.thetestingworld.com/testings")

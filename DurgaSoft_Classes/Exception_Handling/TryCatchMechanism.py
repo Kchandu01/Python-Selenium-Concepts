@@ -41,7 +41,10 @@ The finally block will be executed no matter if the try block raises an error or
 This can be useful to close objects and clean up resources.
 
 Why we need Finally Block?
-In any project after completing the tasks, it is recommended to destroy all the unwanted things that are created for the completion of the task. For example, if I have opened a database connection in my code and done some tasks related to the database. After the tasks are completed, it is recommended to close the connection. These clean-up activities are very important and should be handled in our code.
+In any project after completing the tasks, it is recommended to destroy all the unwanted things that are created for 
+the completion of the task. For example, if I have opened a database connection in my code and done some tasks 
+related to the database. After the tasks are completed, it is recommended to close the connection. 
+These clean-up activities are very important and should be handled in our code.
 
 finally Block in Python:
 finally is a keyword in python which can be used to write a finally block to do clean-up activities.
